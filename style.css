@@ -80,6 +80,27 @@ button:active{
 .fa-twitter{
     font-size:1.5rem;
 }
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #08202f; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+/* loader */
+  /* The @keyframes CSS at-rule
+   controls the intermediate steps in a CSS 
+animation sequence by defining styles for 
+keyframes (or waypoints) along the animation 
+sequence. This gives more control over the 
+intermediatesteps of the animation sequence 
+than transitions. */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 /* Media Query : Tablet or Smaller */
 @media screen and (max-width:1000px){
     .quote-container{
